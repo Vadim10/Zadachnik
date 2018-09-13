@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+        <FileVersion major="1" minor="6" />
+        <Project>
+                <Option title="ptprj" />
+                <Option pch_mode="2" />
+                <Option compiler="gcc" />
+                <Build>
+                        <Target title="Debug Win32">
+                                <Option output="ptprj" prefix_auto="1" extension_auto="1" />
+                                <Option type="0" />
+                                <Option compiler="gcc" />
+                                <Compiler>
+                                        <Add option="-std=c++11" />
+                                        <Add option="-DWIN32" />
+                                        <Add option="-D_DEBUG" />
+                                        <Add option="-D_WINDOWS" />
+                                </Compiler>
+                                <Linker>
+                                        <Add library="libseh.a" />
+                                </Linker>
+                        </Target>
+                        <Target title="Release Win32">
+                                <Option output="ptprj" prefix_auto="1" extension_auto="1" />
+                                <Option type="0" />
+                                <Option compiler="gcc" />
+                                <Compiler>
+                                        <Add option="-std=c++11" />
+                                        <Add option="-DWIN32" />
+                                        <Add option="-DNDEBUG" />
+                                        <Add option="-D_WINDOWS" />
+                                </Compiler>
+                                <Linker>
+                                        <Add library="libseh.a" />
+                                </Linker>
+                        </Target>
+                </Build>
+                <Linker>
+                        <Add library="libseh.a" />
+                        <Add directory="C:\PT4Work/" />
+                </Linker>
+                <Unit filename="TheOne2.cpp" />
+                <Unit filename="pt4.cpp" />
+                <Unit filename="pt4.h" />
+                <Extensions>
+                        <code_completion />
+                        <envvars />
+                        <debugger />
+                        <lib_finder disable_auto="1" />
+                </Extensions>
+        </Project>
+</CodeBlocks_project_file>
